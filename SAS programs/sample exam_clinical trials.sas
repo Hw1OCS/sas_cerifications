@@ -69,3 +69,32 @@ data choiceC;
   if score ^= . then locf = score;
 run;
 
+/*******************************************************************************
+    PROC TRANSPOSE + ARRAY
+*******************************************************************************/
+/* Qn#28. Array */
+data qn28 /*(keep = sex2{4} )*/;
+  set sashelp.class (obs=4);
+
+  array sex2{4};
+  do i=1 to 4;
+	sex2{i} = sex;
+  end;
+run;
+
+/* Qn#55. PROC TRANSPOSE */
+filename rwqn55 "U:\OCS\Certifications\SAS\01 SAS Clinical Trials\02 Exam attempts\sas_cerifications\SAS programs\qn55.csv";
+
+proc import datafile=rwqn55 out=vitals
+  dbms=csv;
+run;
+
+/* Option A. */
+proc transpose data=vitals; 
+  var pulse sysbp diabp;
+run;
+
+/* Option B. */
+proc transpose data=vitals; 
+  by patid visit;
+run;

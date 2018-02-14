@@ -11,7 +11,7 @@ names(exam_attempt) <- names(exam_attempt) %>%
 
 ## Few columns
 exam_attempt_flt <- exam_attempt %>%
-  dplyr::select(c(1,2, 3, 4,5, 6,7, 8,9, 10,11, 12,13,14))
+  dplyr::select(c(1,2, 3, 4,5, 6,7, 8,9, 10,11, 12,13,14,16))
   
 
 ## summary grade by question's profile

@@ -1,9 +1,9 @@
-QuestionNo.,Answer(correct),MultipleChoice,Missingcode,IsitaboutMissingcode?,SASFunction,IsitaboutSASFunction?,Area,Subarea,Isthequestionnewforyou?,Answer(given),Isquestionmarkpresent?,Isquestionmarkpresentalongwithgivenanswer?,Isanswerfilled?
-25,D,Choice,NA,No,1,Yes,ARRAY,"log, ""Array subscript out of range...""",NA,D,1,Yes,Filled
-28,C,Choice,NA,No,1,Yes,ARRAY,syntax error,NA,B,1,Yes,Filled
-31,D,Choice,NA,No,NA,No,PROC TRANSPOSE,"log, ""WARNING: 2 observations omitted...""",NA,A,1,Yes,Filled
-38,A,Choice,1,Yes,1,Yes,ARRAY,Usage of DO loop,NA,A,1,Yes,Filled
-43,ID LABTEST;,Open,1,Yes,NA,No,PROC TRANSPOSE,ID option,NA,ID LABTEST;,NA,No,Filled
-46,A,Choice,NA,No,1,Yes,ARRAY,DIM(),NA,A,1,Yes,Filled
-51,B,Choice,NA,No,NA,No,ARRAY,Returned value,NA,B,1,Yes,Filled
-55,B,Choice,NA,No,NA,No,PROC TRANSPOSE,"BY, VAR, ID",NA,D,1,Yes,Filled
+QuestionNo.,Answer(correct),MultipleChoice,Missingcode,IsitaboutMissingcode?,SASFunction,IsitaboutSASFunction?,Area,Subarea,Isthequestionnewforyou?,Answer(given),Isquestionmarkpresent?,Isquestionmarkpresentalongwithgivenanswer?,Isanswerfilled?,Grade
+25,D,Choice,NA,No,1,Yes,ARRAY,"log, ""Array subscript out of range...""",NA,D,1,Yes,Filled,1
+28,C,Choice,NA,No,1,Yes,ARRAY,syntax error,NA,B,1,Yes,Filled,0
+31,D,Choice,NA,No,NA,No,PROC TRANSPOSE,"log, ""WARNING: 2 observations omitted...""",NA,A,1,Yes,Filled,0
+38,A,Choice,1,Yes,1,Yes,ARRAY,Usage of DO loop,NA,A,1,Yes,Filled,1
+43,ID LABTEST;,Open,1,Yes,NA,No,PROC TRANSPOSE,ID option,NA,ID LABTEST;,NA,No,Filled,1
+46,A,Choice,NA,No,1,Yes,ARRAY,DIM(),NA,A,1,Yes,Filled,1
+51,B,Choice,NA,No,NA,No,ARRAY,Returned value,NA,B,1,Yes,Filled,1
+55,B,Choice,NA,No,NA,No,PROC TRANSPOSE,"BY, VAR, ID",NA,D,1,Yes,Filled,0
