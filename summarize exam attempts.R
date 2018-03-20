@@ -43,3 +43,16 @@ resp_wrong <- exam_attempt_flt %>%
 ## summarize data
 resp_wrong_func <- resp_wrong %>%
   dplyr::filter(SASFunction %in% c(1))
+
+## visualization
+resp_wrong$Area <- as.factor(resp_wrong$Area)
+tbl_wrong <- as.data.frame(table(resp_wrong$Area))
+colnames(tbl_wrong) <- c("area", "count")
+
+bchart_wrong <- ggplot(data = tbl_wrong, aes(area, count)) + 
+  geom_bar(stat = "identity") + 
+  coord_flip()
+
+## save plot
+ggsave(filename = "./barchart_wrong answers.png", plot = bchart_wrong, device = "png")
+dev.off()
